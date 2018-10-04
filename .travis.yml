@@ -1,7 +1,7 @@
 os:
   - linux
 #  - osx
-dist: precise
+#dist: precise
 
 language: python
 python:
