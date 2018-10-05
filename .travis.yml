@@ -1,7 +1,5 @@
 os:
   - linux
-#  - osx
-#dist: precise
 
 language: python
 python:
@@ -13,9 +11,8 @@ notifications:
 
 sudo: required
 
-### # To get latex (but also need revtex4-1, emulateapj, and other classes for full test
+# To get latex and revtex4-1
 before_install:
-  #- yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
   - yes "" | sudo add-apt-repository ppa:jonathonf/texlive
   - sudo apt-get update -y
   - sudo apt-get install -y --no-install-recommends
@@ -29,8 +26,6 @@ before_install:
 #  - wget http://hea-www.harvard.edu/~alexey/emulateapj/emulateapj.cls
 #  - wget http://mirror.jmu.edu/pub/CTAN/macros/latex/contrib/mnras/mnras.cls
 #  - wget http://journals.aas.org/authors/aastex/aastex61.cls
-
-### - " --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
  
 # Setup dependencies and install package
 install:
