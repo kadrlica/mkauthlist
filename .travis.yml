@@ -39,7 +39,7 @@ install:
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda config --set always_yes yes --set changeps1 no
   - conda info -a
-  - conda create -q -n travis-env python=$TRAVIS_PYTHON_VERSION numpy=1.11 nose 
+  - conda create -q -n travis-env python=$TRAVIS_PYTHON_VERSION numpy=1.13 nose 
   - source activate travis-env
   - python setup.py install
 
