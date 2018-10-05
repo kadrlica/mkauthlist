@@ -15,16 +15,16 @@ sudo: required
 
 ### # To get latex (but also need revtex4-1, emulateapj, and other classes for full test
 before_install:
-  #- yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
+  - yes "" | sudo apt-add-repository ppa:texlive-backports/ppa
   #- yes "" | sudo add-apt-repository ppa:jonathonf/texlive
-  #- sudo apt-get update -y
-  #- sudo apt-get install -y --no-install-recommends
-  #   texlive-fonts-recommended
-  #   texlive-latex-extra
-  #   texlive-latex-recommended
-  #   texlive-publishers
-  #   texlive-generic-recommended
-  #   latex-xcolor
+  - sudo apt-get update -y
+  - sudo apt-get install -y --no-install-recommends
+     texlive-fonts-recommended
+     texlive-latex-extra
+     texlive-latex-recommended
+     texlive-publishers
+     texlive-generic-recommended
+     latex-xcolor
 
 #  - wget http://hea-www.harvard.edu/~alexey/emulateapj/emulateapj.cls
 #  - wget http://mirror.jmu.edu/pub/CTAN/macros/latex/contrib/mnras/mnras.cls
